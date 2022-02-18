@@ -1,0 +1,28 @@
+-allow window resizing with screen
+-increase player size instead of zooming closer (zooming reduces resolution)
+-improve engine and use it (use delta time, fixed timestep loop)
+
+-revamp game entities to use arrays
+-revamp controller class to use arrays
+-add optimization to stop rendering objects if they are offscreen
+
+-always round all objects x and y pos to whole numbers to avoid weird screen glitching
+
+-find way to maintain aspect ratio when game world has diff aspect ratio to canvas
+
+-change frictionCoeff for different sides of objects (less on sides and bottom)
+
+BUGS:
+-player is able to slightly move into walls if against wall and holding arrow key towards wall
+-when player jumps straight up and collides with world bottom when falling a small flicker at bottom of
+player rect appears (with trail on)
+
+-when display size < game world size && display aspect ratio != 1:1 
+-> proper aspect ratio matching does not occur for buffer canvas
+
+-when aspect ratio != 1:1 -> camera zooming alters aspect ratio
+
+Currently  working on:
+-maintaining aspect ration when game world size is different to display canvas size
+  -fixing bug: when display size < game world size && display AE != 1:1 && game AE != 1:1 && game height > game width 
+-> proper aspect ratio matching does not occur for buffer canvas
