@@ -1,0 +1,79 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#settings-button {
+  position: absolute;
+}
+#gui-container {
+  background-color: rgba(191, 191, 191, 0.8);
+  border-radius: 10px;
+  position: absolute;
+  display: block;
+  margin: 10%;
+}
+.gui-form {
+  padding: 0px;
+  margin: 70px;
+}
+.gui-form-list {
+  margin: 0px;
+  padding: 0px;
+}
+.gui-form-list li {
+  padding: 5px;
+  list-style-type: none;
+}
+#gui-form-ball {
+  float: left;
+  margin-right: 35px;
+}
+#gui-form-paddle {
+  float: right;
+  margin-left: 35px;
+}
+.gui-form-input {
+  width: 10ch;
+}
+#gui-title {
+  display: table;
+  margin: auto;
+}
+#settings-apply {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+.gui-button {
+  padding: 5px;
+  border: none;
+}
+#gui-button-container {
+}
+#gui-isTargetting-button {
+}
+#gui-isDynamicMove-button {
+}
+#settings-exit {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+#gui-button-list {
+  list-style-type: none;
+  padding: 70px;
+}
+#gui-button-list li {
+  margin: 10px;
+}
+#gui-button-list li button {
+  background-color: white;
+}
+button:focus {
+  border: none;
+  outline: none;
+}
+button:active {
+  background-color: rgb(222, 222, 222);
+}

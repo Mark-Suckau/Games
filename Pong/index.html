@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pong</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="p5.js"></script>
+  <script src="ball.js"></script>
+  <script src="paddle.js"></script>
+  <script src="sketch.js"></script>
+  <script src="gui.js"></script>
+</head>
+<body>
+  <button id="settings-button">Settings</button>
+  <div id="gui-container">
+    <h1 id="gui-title">Settings</h1>
+    <form class="gui-form" id="gui-form-ball">
+      <ul class="gui-form-list">
+        <li>
+          <label>Ball Radius</label>
+          <input type="number" class="gui-form-input" id="gui-form-ball-radius">
+        </li>
+        <li>
+          <label>Ball Speed</label>
+          <input type="number" class="gui-form-input" id="gui-form-ball-speed">
+        </li>
+      </ul>
+    </form>
+    <form class="gui-form" id="gui-form-paddle">
+      <ul class="gui-form-list">
+        <li>
+          <label>Paddle Speed</label>
+          <input type="number" class="gui-form-input" id="gui-form-paddle-speed">
+        </li>
+        <li>
+          <label>FPS</label>
+          <input type="number" class="gui-form-input" id="gui-form-fps">
+        </li>
+      </ul>
+    </form>
+    <div id="gui-button-container">
+      <ul id="gui-button-list">
+        <li>
+          <button class="gui-button" id="gui-isTargetting-button">Targetting</button>
+        </li>
+        <li>
+          <button class="gui-button" id="gui-isDynamicMove-button">Dynamic Movement</button>
+        </li>
+        <li>
+          <button class="gui-button" id="gui-isShowVisual-button">Show Visuals</button>
+        </li>
+        <li>
+          <button class="gui-button" id="gui-isLeftAI-button">Left Computer</button>
+        </li>
+        <li>
+          <button class="gui-button" id="gui-isRightAI-button">Right Computer</button>
+        </li>
+      </ul>
+    </div>
+    <button class="gui-button" id="settings-exit">X</button>
+    <button class="gui-button" id="settings-apply">Apply</button>
+  </div>
+</body>
+</html>
